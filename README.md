@@ -1,3 +1,3 @@
 # this is the Header of the file
 
-trying to improve my self
+the project is to made website of chocolate and ice cream
