@@ -19,7 +19,7 @@ Versio Controll =>
         add   : add files to Git for tracking changes
         Commit: save files that has been changed
         Push  : push/upload files to remote repo 'Github'
-        Pull  : pulling/dowload files that has been chang from remote repo to your machine 
+        Pull  : pulling/download files that has been chang from remote repo to your machine 
 
 
 
