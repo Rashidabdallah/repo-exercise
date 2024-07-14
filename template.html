@@ -16,45 +16,40 @@
     </div>
 
     <ul>
-      <li><a href="#">cake</a></li>
-      <li><a href="#">ice cream</a></li>
+      <li><a class="menulink" href="#">donuts</a>
+        <ul class="sub-menu">
+          <li>vanilla</li>
+          <li>chocolate</li>
+          <li>mango</li>
+          <li>banana</li>
+        </ul>
+      </li>
+
+      <li><a class="menulink"  href="#">ice cream</a>
+        <ul class="sub-menu">
+          <li>vanilla</li>
+          <li>chocolate</li>
+          <li>mango</li>
+          <li>banana</li>
+        </ul>
+      </li>
       <li><a href="#" id="Home">Home</a></li>
       <li><a href="#">Social</a></li>
     </ul>
   </nav>
-  <main>
-    <div class="container">
-     
-    </div>
-    <div class="container">
-       <img  src="icons8-ice-cream-color/ice-creams-table.jpg" alt="product">
-       <div>info about product</div>
-    </div>
 
-
-
-    <div class="container"></div>
-    <div class="container"></div>
-    <div class="container"></div>
-    <div class="container"></div>
-    <div class="container"></div>
-    <div class="container"></div>
-    <div class="container"></div>
-    <div class="container"></div>
-    <div class="container"></div>
-    <div class="container"></div>
   
-  </main>
-
+    
+  <script src="jquery-3.7.1.min.js"></script>
   <script>
-    console.log(window.innerHeight)
-    var mymain = document.querySelector('main');
-    document.body.scroll = function(){
-      if(window.innerHeight > 300 ){
-        mymain.classList.add('slid-main')
-      }
-    }
-
+    	$('ul li ul ').hide();
+		$('.menulink').click(function(){
+			const thismenu = $(this).next();
+			$('ul li ul').not(thismenu).hide();
+			thismenu.toggle();
+		})
+   
+    
 
 
 
