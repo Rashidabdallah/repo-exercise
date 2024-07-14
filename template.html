@@ -3,289 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="ice cream.css">
   
-  <title>Document</title>
-  <style>
-    *{
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family:'Times New Roman', Times, serif;
-      
-      
-    }
-    body{
-      height: 200vh;
-      background-color: darkcyan;
-     
-     
-      
-     
-    }
-    /* body::after{
-      content: "";
-      width: 100%;
-      height: 116%;
-      position: absolute;
-      background-color: red;
-      clip-path: circle(45%);
-      top: 197%;
-      z-index: -1;
-    } */
-    header::after{
-      content: "";
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-color: rgb(23 22 37 / 57%);
-      z-index: -1;
-    }
-    Header{
-      width: 100%;
-      height: 40vh;
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      box-shadow: 5px 3px 10px rgb(208, 195, 195);
-    
-
-    }
-    nav{
-      width: 100%;
-      height: 60%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-content: space-around;
-      flex-wrap: wrap;
-      align-items: center;
-    }
-    .subb-nav{
-      width: 100%;
-      height:200px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-content: center;
-      flex-wrap: wrap;
-      align-items: center;
-
-    }
-    ul{
-      display: flex;
-      list-style: none;
-      margin-bottom: 70px;
-    }
-    li a{
-      display: flex;
-      text-decoration: none;
-      padding: 10px;
-      color: azure;
-    }
-    h1 {
-     padding-top: 15px;
-     padding-right: 20px;
-     text-transform: uppercase;
-     letter-spacing: 3px;
-    }
-    p{
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      line-height: 28px;
-      padding-left: 20px;
-      color: azure;
-    }
-    #first-p{
-      font-weight:800;
-      color: lightpink;
-    }
-    span{
-      color: lightpink;
-    }
-    #Home{
-      text-decoration: underline;
-      text-decoration-thickness: 3px;
-      text-underline-offset: 5px;
-    }
-    .vid{
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: -2;
-    }
-    #cart-icon{
-      font-size: 20px;
-      color: #e00000;
-    }
-    main{
-      width: 100%;
-      height: 30%;
-      padding-top: 15px;
-      display: flex;
-      flex-wrap: wrap;
-      align-content: flex-start;
-      justify-content: center;
-        gap: 13px;
-
-
-      
-    }
-   
-    main div{
-      width: 180px;
-      height: 300px;
-      margin: 4px;
-      display: flex;
-      background-color:skyblue;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-      border-radius: 20px;
-      box-shadow: 3px 7px 11px #393434;
-      flex-grow:1;
-
-
-
-    }
-    .product{
-      width: 100%;
-      height: 48%;
-      object-fit: contain;
-    
-    }
-    
-    .AddTocart{
-      background-color: rgba(0, 0, 0, 0);
-      border: 2px solid black;
-      height: 35px;
-      width: 126px;
-      border-radius: 16px;
-      font-size: 20px;
-      text-align: center;
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      
-    }
-    .AddTocart:hover{
-      background-color: #30a7ffd9;
-      opacity: 0.8;
-
-    }
-    
-  
-    .addremobbtn{
-      background-color: #2a0d0d;
-    }
-    
-
-
-
-
-  </style>
+  <title>ice creme </title>
 </head>
 <body>
-  <header>
-   <video src="bback.mp4" class="vid" autoplay muted loop></video>
-   
-    <nav>
-      <h1>LOGO</h1>
-      <ul>
-        <li><a href="#" id="Home">Home</a></li>
-        <li><a href="#">Social</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Education</a></li>
-        <li><a href="img.html" id="cart-icon">Cart</a></li>
-        
-      </ul>
-    </nav>
-    
-    <div class="subb-nav">
-      <p id="first-p">Try our product</p>
-      <p> Your Fantastic <span>Collections</span>  Are Available...lets GO !</p>
-      
+  <nav>
+    <div class="top-logo">
+      <img  src="icons8-ice-cream-color/icons8-ice-cream-40.png" alt="logo">
+      <h1>Desert</h1>
+      <img  src="icons8-ice-cream-color/icons8-donuts-40.png" alt="logo">
     </div>
-  </header>
+
+    <ul>
+      <li><a href="#">cake</a></li>
+      <li><a href="#">ice cream</a></li>
+      <li><a href="#" id="Home">Home</a></li>
+      <li><a href="#">Social</a></li>
+    </ul>
+  </nav>
   <main>
+    <div class="container">
+     
+    </div>
+    <div class="container">
+       <img  src="icons8-ice-cream-color/ice-creams-table.jpg" alt="product">
+       <div>info about product</div>
+    </div>
 
-    <div>
-      <img src="images/delicious-ice-cream-with-topping.jpg" alt="product" class="product">
-      <p>our collection get now</p>
-      <button onclick="master(this)" class="AddTocart">Buy</button>
 
-    </div>
-    <div> <img src="images/delicious-ice-cream-with-topping.jpg" alt="product" class="product">
-      <p>our collectio get now</p>
-      <button onclick="master(this)" class="AddTocart">Buy</button>
-    </div>
-    <div> <img src="images/delicious-ice-cream-with-topping.jpg" alt="product" class="product">
-      <p>our collectio get now</p>
-      <button onclick="master(this)" class="AddTocart">Buy</button>
-    </div>
-    <div> <img src="images/delicious-ice-cream-with-topping.jpg" alt="product" class="product">
-      <p>our collectio get now</p>
-      <button onclick="master(this)" class="AddTocart">Buy</button>
-    </div>
-    <div> <img src="images/delicious-ice-cream-with-topping.jpg" alt="product" class="product">
-      <p>our collectio get now</p>
-      <button onclick="master(this)" class="AddTocart">Buy</button>
-    </div>
-    <div> <img src="images/delicious-ice-cream-with-topping.jpg" alt="product" class="product">
-      <p>our collectio get now</p>
-      <button onclick="master(this)" class="AddTocart">Buy</button>
-    </div>
-    
+
+    <div class="container"></div>
+    <div class="container"></div>
+    <div class="container"></div>
+    <div class="container"></div>
+    <div class="container"></div>
+    <div class="container"></div>
+    <div class="container"></div>
+    <div class="container"></div>
+    <div class="container"></div>
+    <div class="container"></div>
+  
   </main>
-  
-  
+
+  <script>
+    console.log(window.innerHeight)
+    var mymain = document.querySelector('main');
+    document.body.scroll = function(){
+      if(window.innerHeight > 300 ){
+        mymain.classList.add('slid-main')
+      }
+    }
 
 
 
-  <script> 
-
-    function master(btn){
-      
-      'use strict'
-     
-      if (btn.innerHTML === 'Buy') {
-              btn.innerHTML = 'Remove';
-      
-              
-      }else{
-              btn.innerHTML = 'Buy';
-            }
-        
-
-
-
-    };
-    
-    
-            
-
-   
-     
-    
-    
-      
-      
-   
-    
 
   </script>
- 
-
- 
-  <!-- var hold = document.querySelector("h1");
-    document.addEventListener('keydown' , function(e){ 'use strik';
-      var kayo = e.code;
-      
-      if(kayo === 'KeyR'){
-        hold.classList.toggle('dista')
-
-
-      }
-    }) --> 
 </body>
 </html>
